@@ -26,3 +26,18 @@ export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 # export LD_LIBRARY_PATH=/usr/local/cuda-12.4/lib64:/usr/local/cuda-12.1/lib64:/usr/local/cuda-11.8/lib64:/usr/local/cuad-11.6/lib64{LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 
 export NODE_OPTIONS="--max-old-space-size=8192"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/jovyan/shared/pp/venv/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/jovyan/shared/pp/venv/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/jovyan/shared/pp/venv/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/jovyan/shared/pp/venv/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
